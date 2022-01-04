@@ -5,19 +5,22 @@
 }
 
 header {
-    height: 70px;
+    height: 45px;
     width: 100%;
     background-color: rgb(243, 243, 243);
     opacity: 0.7;
     position: fixed;
     top: 0;
     z-index: 10;
+    overflow: hidden;
 }
 
 header h1 {
     display: inline-block;
-    float: left;
-    padding: 16px 24px;
+    font-size: 24px;
+    height: 45px;
+    /* float: left; */
+    padding: 10px 24px;
     text-transform: uppercase;
 }
 
@@ -33,10 +36,16 @@ header .header-right {
     float: right;
     transition: 0.3s;
     display: block;
-    padding: 20px;
+    padding: 7px 6px;
     font-size: 20px;
-    border-top: 4px solid green;
-    border-bottom: 4px solid green;
+    height: 45px;
+    font-weight: bold;
+    /* border-top: 4px solid green;
+    border-bottom: 4px solid green; */
+}
+
+header .header-right:hover {
+    background-color: #1ad2eb;
 }
 
 header a:hover {
@@ -61,7 +70,7 @@ a {
 .mobile-menu {
     float: right;
     display: none;
-    padding: 18px;
+    padding: 9px;
     cursor: pointer;
     transition: 2s;
 }
@@ -72,9 +81,9 @@ a {
 
 .sidebar {
     position: fixed;
-    top: 0;
+    top: 45px;
     bottom: 0;
-    left: -300px;
+    right: -300px;
     width: 200px;
     background-color: rgba(16, 47, 80, 0.9);
     transition: .3s;
@@ -84,6 +93,7 @@ a {
 
 .sidebar ul li {
     padding: 24px;
+    list-style: none;
 }
 
 .sidebar ul li:hover {
@@ -98,7 +108,7 @@ a {
 
 /* menampilkan sidebar jika klik .mobile-menu*/
 #check:checked~.sidebar {
-    left: 0;
+    right: 0;
 }
 
 section {
@@ -106,15 +116,16 @@ section {
 }
 
 .banner {
-    margin-top: 70px;
+    margin-top: 45px;
     background-color: #23a0b1;
 }
 
 .banner img {
-    height: 150px;
+    height: 180px;
     border-radius: 10px;
     box-shadow: 0 3px 5px #ddd;
     margin-bottom: 10px;
+
 }
 
 .banner h2,
@@ -131,7 +142,8 @@ section {
 }
 
 .banner-left {
-    padding-left: 24px;
+
+    text-align: center;
 }
 
 section h3 {
@@ -145,7 +157,7 @@ section h3::before {
     content: '';
     display: block;
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     width: 40px;
     height: 2px;
     background-color: red;
@@ -183,11 +195,11 @@ section h3::before {
 }
 
 .html {
-    width: 100%;
+    width: 90%;
 }
 
 .css {
-    width: 90%;
+    width: 85%;
 }
 
 .js {
@@ -196,6 +208,10 @@ section h3::before {
 
 .py {
     width: 70%;
+}
+
+.php {
+    width: 85%;
 }
 
 .col-4 {
