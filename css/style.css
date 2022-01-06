@@ -12,16 +12,17 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header h1 {
-    display: inline-block;
+    display: inline;
     font-size: 24px;
-    height: 45px;
+    line-height: 45px;
     /* float: left; */
     padding: 10px 24px;
     text-transform: uppercase;
+
 }
 
 header h1 a:hover {
@@ -35,11 +36,12 @@ header h1 a {
 header .header-right {
     float: right;
     transition: 0.3s;
-    display: block;
-    padding: 7px 6px;
+    /* display: block; */
+    padding: 0px 6px;
     font-size: 20px;
-    height: 45px;
+    line-height: 45px;
     font-weight: bold;
+    box-sizing: border-box;
     /* border-top: 4px solid green;
     border-bottom: 4px solid green; */
 }
@@ -70,7 +72,7 @@ a {
 .mobile-menu {
     float: right;
     display: none;
-    padding: 9px;
+    margin-top: 5px;
     cursor: pointer;
     transition: 2s;
 }
@@ -141,8 +143,7 @@ section {
     font-size: 18px;
 }
 
-.banner-left {
-
+.banner-center {
     text-align: center;
 }
 
@@ -232,6 +233,7 @@ section h3::before {
 }
 
 .col-4 a img {
+    border-radius: 5px;
     transition: 0.5s;
 }
 
@@ -240,7 +242,7 @@ section h3::before {
 }
 
 .col-4 a img:active {
-    transform: rotate(90deg);
+    box-shadow: 0px 0px 10px black;
 }
 
 .col-3 {
@@ -273,16 +275,21 @@ html {
 
 /* Ukuran Tablet */
 @media screen and (max-width: 768px) {
-    .mobile-menu {
+    /* .mobile-menu {
         display: block;
-    }
+    } */
 
     .sidebar {
         display: block;
     }
 
+    header h1 {
+        font-size: 18px;
+    }
+
     header .header-right {
-        display: none;
+        font-size: 14px;
+        padding: 0 4px;
     }
 
     .col-4 {
