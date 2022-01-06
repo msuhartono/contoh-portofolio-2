@@ -231,9 +231,16 @@ section h3::before {
     width: 100%;
 }
 
+.col-4 a img {
+    transition: 0.5s;
+}
+
 .col-4 a img:hover {
     transform: scale(.9);
-    transition: 0.5s;
+}
+
+.col-4 a img:active {
+    transform: rotate(90deg);
 }
 
 .col-3 {
@@ -280,6 +287,28 @@ html {
 
     .col-4 {
         width: 50%;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    header .header-right {
+        display: none;
+    }
+
+    .col-4 {
+        width: 100%;
     }
 
     .col-3 {

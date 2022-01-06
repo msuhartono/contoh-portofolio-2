@@ -37,3 +37,10 @@ iconPutar.addEventListener('click', function () {
     iconPutar.setAttribute('class', '');
     iconBiasa.setAttribute('class', 'fa fa-bars fa-2x');
 });
+
+// const foto = document.querySelector('#tes');
+// foto.addEventListener('click', function () {
+//     setTimeout(function () {
+//         window.location.href = 'portofolio-1.html'
+//     }, 3000);
+// });
